@@ -6,14 +6,10 @@ body {
   background-color: black;
 }
 
-header{
+header {
   width: 100%;
   padding: 10px;
 }
-
-
-
-
 
 /* Estiliza os títulos <h2> com um tamanho maior, cor azul, fonte em negrito e letras espaçadas. Isso dá um destaque maior para os títulos. */
 h2 {
@@ -127,6 +123,11 @@ section {
   padding: 16px;
   border-radius: 100px;
   box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out;
+}
+
+#course-content .modules-list .module:hover {
+  transform: translateY(-6px);
 }
 
 #course-content .modules-list .module span {
@@ -148,7 +149,7 @@ section {
 #transform-world p {
   font-weight: 900;
   font-size: 2.5rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
   max-width: 250px;
   text-shadow: 3px 2px #33a8db;
 }
@@ -184,53 +185,79 @@ footer a {
   text-decoration: none;
 }
 
-
-
-@media (max-width: 480px) {
-  /* Ajustes para celulares pequenos */
+@media (max-width: 1024px) {
+  #transform-world {
+    background-position: center center;
+  }
 }
 
 @media (max-width: 767px) {
   /* Ajustes para celulares padrão */
+
+  .banner h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  p {
+    font-size: 1rem; /* Aproximadamente 16px */
+  }
 
   .banner .banner-content {
     width: 100%;
   }
 
   .banner h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem; /* Aproximadamente 28px */
   }
-  
+
   .banner p {
-    font-size: 1rem;
+    font-size: 1rem; /* Aproximadamente 16px */
     margin: 16px 0 24px;
   }
-  
-  .banner .logo {  
-    height: 260px;
-    width: 260px;
-    margin: auto;
-    padding: 16px;
-    margin-bottom: 16px;
-  }
-  
-  .banner .logo img {
-    margin: auto;
+
+  #course-content {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    padding: 20px;
   }
-  
+
+  #course-content .modules-list .module {
+    width: 90%;
+  }
+
+  #transform-world {
+    background-position: center center;
+    padding: 200px 200px 200px 100px;
+  }
+
+  #professional-challenges {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #professional-challenges img {
+    width: 90%;
+  }
 }
 
+@media (max-width: 480px) {
+  /* Ajustes para celulares pequenos */
+  .banner h2 {
+    font-size: 1.25rem; /* 20px */
+  }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Ajustes para tablets pequenos */
+  p {
+    font-size: 1rem; /* Aproximadamente 16px */
+  }
+
+  .banner h1 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .banner p {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  #professional-challenges img {
+    width: 90%;
+  }
 }
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-  /* Ajustes para tablets grandes */
-}
-
-
-
